@@ -1,0 +1,16 @@
+.generic-text {
+  margin: 0 auto;
+  letter-spacing: 1px;
+  color: $paraGray;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.5;
+
+  @include largePhone {
+    font-size: 1.8rem;
+  }
+
+  @include smallPhone {
+    font-size: 1.5rem;
+  }
+}

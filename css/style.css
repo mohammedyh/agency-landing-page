@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&display=swap");
+body::selection {
+  background: #ed7161;
+  color: #908f8f; }
+
+::-moz-selection {
+  background: #db5746;
+  color: #272f3f; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+  padding: 0 10px; }
+  @media (max-width: 414px) {
+    .wrapper {
+      padding: 0 20px; } }
+
+.btn {
+  display: inline-block;
+  background-color: #ed7161;
+  padding: 1.3rem 3.2rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  transition: all 400ms ease-in-out; }
+  .btn:hover {
+    background-color: #db5746;
+    box-shadow: 0px 10px 6px -6px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 414px) {
+    .btn {
+      font-size: 1.5rem;
+      padding: 1rem 3rem; } }
+  @media (max-width: 320px) {
+    .btn {
+      font-size: 1.5rem;
+      padding: 1rem 2.5rem; } }
+
+.page-section {
+  padding: 8rem 0;
+  text-align: center; }
+
+.section-title {
+  color: #272f3f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 3rem; }
+  @media (max-width: 414px) {
+    .section-title {
+      font-size: 3.7rem; } }
+  @media (max-width: 320px) {
+    .section-title {
+      font-size: 3rem; } }
+
+.section-subtitle {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  color: #ed7161;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin-bottom: 5rem; }
+  .section-subtitle::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 85px;
+    margin: 0 auto;
+    background-color: #ed71612e;
+    margin-bottom: 3rem; }
+
+.generic-text {
+  margin: 0 auto;
+  letter-spacing: 1px;
+  color: #908f8f;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.5; }
+  @media (max-width: 414px) {
+    .generic-text {
+      font-size: 1.8rem; } }
+  @media (max-width: 320px) {
+    .generic-text {
+      font-size: 1.5rem; } }
+
+.hero {
+  background: linear-gradient(rgba(39, 47, 63, 0.7), rgba(39, 47, 63, 0.7)), url("/img/pontus-wellgraf-XnAZ-6O36EI-unsplash.jpg") center center no-repeat;
+  background-size: cover;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  @media (max-width: 1024px) {
+    .hero {
+      height: 90vh; } }
+  .hero__title {
+    font-family: "Catamaran", sans-serif;
+    font-size: 8rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 0.7; }
+    @media (max-width: 1024px) {
+      .hero__title {
+        font-size: 7rem; } }
+    @media (max-width: 768px) {
+      .hero__title {
+        font-size: 5rem; } }
+    @media (max-width: 414px) {
+      .hero__title {
+        font-size: 3.5rem; } }
+    @media (max-width: 320px) {
+      .hero__title {
+        font-size: 2.5rem; } }
+    .hero__title--faded {
+      display: inline-block;
+      transform: scale(1.3);
+      color: rgba(255, 255, 255, 0.35); }
+    .hero__title--red {
+      color: #ed7161;
+      font-family: "Merriweather", serif;
+      font-style: italic;
+      transform: scale(1.2); }
+  .hero__subtitle {
+    width: 60%;
+    font-weight: 100;
+    font-size: 3rem;
+    margin: 6rem auto;
+    line-height: 2; }
+    @media (max-width: 768px) {
+      .hero__subtitle {
+        width: 80%;
+        font-size: 2.5rem; } }
+    @media (max-width: 414px) {
+      .hero__subtitle {
+        width: 100%;
+        font-size: 2rem;
+        margin: 3rem auto; } }
+    @media (max-width: 320px) {
+      .hero__subtitle {
+        font-size: 1.5rem; } }
+
+.services {
+  background-color: #fafafa; }
+  .services__container {
+    margin-top: 10rem;
+    text-align: left; }
+  .services__box {
+    position: relative; }
+    @media (max-width: 1024px) {
+      .services__box {
+        padding: 0 2rem; } }
+    @media (max-width: 320px) {
+      .services__box {
+        padding: 0 1rem; } }
+    .services__box:nth-child(2) {
+      margin: 10rem 0; }
+  .services__service-title {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgba(39, 47, 63, 0.6);
+    position: absolute;
+    top: -3.5rem;
+    left: -3.5rem; }
+    @media (max-width: 1024px) {
+      .services__service-title {
+        position: static;
+        font-size: 5.5rem;
+        color: #272f3f; } }
+    @media (max-width: 414px) {
+      .services__service-title {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem; } }
+    .services__service-title__bullet {
+      color: rgba(237, 113, 97, 0.6); }
+      @media (max-width: 1024px) {
+        .services__service-title__bullet {
+          display: none; } }
+  .services__service-description {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2; }
+    @media (max-width: 1024px) {
+      .services__service-description {
+        width: 100%;
+        position: static;
+        font-size: 3rem; } }
+    @media (max-width: 414px) {
+      .services__service-description {
+        font-size: 2rem; } }
+
+.footer {
+  background-color: #272f3f;
+  padding: 3rem 0;
+  text-align: center;
+  color: #fff; }
+  .footer__text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 2; }
+    @media (max-width: 414px) {
+      .footer__text {
+        font-size: 1.8rem; } }
+  .footer__decoration {
+    color: #ed7161; }

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700&display=swap');
+
+@import "base/mixins";
+@import "base/vars";
+@import "base/global";
+
+@import "layout/wrapper";
+@import "layout/btn";
+@import "layout/page-section";
+@import "layout/section-title";
+@import "layout/generic-text";
+
+@import "modules/hero";
+@import "modules/services";
+@import "modules/footer";

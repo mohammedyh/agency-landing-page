@@ -1,0 +1,27 @@
+body::selection {
+  background: $mainRed;
+  color: $paraGray
+}
+
+::-moz-selection {
+  background: $darkRed;
+  color: $mainBlue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-1;
+  font-weight: 400; 
+  font-size: 16px;
+}
+
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
